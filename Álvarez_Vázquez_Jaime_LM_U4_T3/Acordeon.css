@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+#contenedor {
+  width: 500px;
+  height: border-box;
+  background-color: grey;
+  margin: 0px auto;
+  margin-top: 70px;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+#número1 {
+  background-color: transparent;
+}
+#número2 {
+  background-color: grey;
+}
+#número3 {
+  background-color: grey;
+}
+#número4 {
+  background-color: grey;
+}
+#número5 {
+  background-color: grey;
+}
+.partes {
+  overflow-y: auto;
+}
+.aperturas {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.abreme {
+  float: right;
+  margin-right: 200px;
+}
+.imagenes img {
+  margin-left: 140px;
+  float: left;
+}
+.textos p{
+  margin-left: 10px;
+  float: right;
+  color: yellow;
+}
+.titulos {
+  border: 1px solid black;
+}

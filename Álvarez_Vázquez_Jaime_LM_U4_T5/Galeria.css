@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+#contenedor {
+  width: 700px;
+  height: 500px;
+  margin: 0px auto;
+  position: relative;
+}
+#contenedor img {
+  position: absolute;
+}
+.flechas {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-top: 225px;
+  opacity: 0.1
+}
+#flecha1 {
+  float: left;
+}
+#flecha2 {
+  float: left;
+  margin-left: 648px;
+}

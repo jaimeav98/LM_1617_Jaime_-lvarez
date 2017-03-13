@@ -1,0 +1,14 @@
+.fondo {
+  background-color: black;
+}
+.letra {
+  color: white;
+}
+.odd {
+  color: black;
+  background-color: grey;
+}
+.even {
+  color: white;
+  background-color: grey;
+}

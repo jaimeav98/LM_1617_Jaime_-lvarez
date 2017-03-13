@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	   <title>Galería de Imagenes</title>
+	   <link href="Galeria.css" rel="stylesheet" type="text/css" media="all" />
+	   <script src="js/jquery-3.1.1.min.js"></script>
+  </head>
+  <body background="http://fotos.subefotos.com/2f4d7ff50543acbe05aedaaa21ba403do.gif">
+    <div id="contenedor">
+      <img id="hijo1" class="esconder current" width="700px" height="500px" src="http://www.hdfondos.eu/pictures/2015/0926/1/orig_322515.jpg">
+      <img id="hijo2" class="esconder" width="700px" height="500px" src="http://www.arpem.com/coches/coches/audi/audi-r-8/fotos/2010/gt-lateral.jpg">
+      <img id="hijo3" class="esconder" width="700px" height="500px" src="http://www.blogcdn.com/www.autoblog.com/media/2008/12/r8080028-1280.jpg">
+      <img id="hijo4" class="esconder" width="700px" height="500px" src="http://www.leibat.net/tienda/images/FALDON%20TRASERO%20AUDI%20R8%20LOOK%20V10%20RIEGER%20TUNING.jpg">
+      <div id="flecha1" class="flechas">
+        <img width="50px" height="50px" src="https://image.freepik.com/iconos-gratis/flecha-en-negrita-izquierda-ios-7-simbolo-interfaz_318-34824.jpg">
+      </div>
+      <div id="flecha2" class="flechas">
+        <img width="50px" height="50px" src="http://img.freepik.com/iconos-gratis/flecha-correcta_318-113460.jpg?size=338c&ext=jpg">
+      </div>
+    </div>
+    <script>
+     $(function () {
+       $(".esconder").hide();
+       $(".esconder:first-child").show();
+       $("#flecha2").click(function () {
+        if ($(".current").next(".esconder").length !=0) { 
+          $(".current").removeClass("current").hide().next(".esconder").addClass("current").show();
+        }
+       });
+       $("#flecha1").click(function () {
+        if ($(".current").prev(".esconder").length !=0) {
+           $(".current").removeClass("current").hide().prev(".esconder").addClass("current").show();
+         }
+       });
+
+     });
+
+    </script>
+  </body>
+</html>
